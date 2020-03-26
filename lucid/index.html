@@ -14,8 +14,9 @@
 </head>
 
 <body>
-
-  <header class="header">
+  <!--<div class="background-dark"></div>-->
+  <!--<button id="toTop" title="Go to top">Top</button>-->
+  <header class="header"  id="header-link">
     <div class="container">
       <nav class="menu">
         <a class="logo" href="#">
@@ -26,22 +27,32 @@
             Onepage Theme
           </div>
         </a>
-        <ul class="menu__navigation">
-          <li class="menu__navigation-item"><a href="#" class="menu__navigation-link">Home</a></li>
-          <li class="menu__navigation-item"><a href="#" class="menu__navigation-link">Features</a></li>
-          <li class="menu__navigation-item"><a href="#" class="menu__navigation-link">About</a></li>
-          <li class="menu__navigation-item"><a href="#" class="menu__navigation-link">Testimonials</a></li>
-          <li class="menu__navigation-item"><a href="#" class="menu__navigation-link">Pricing</a></li>
-          <li class="menu__navigation-item"><a href="#" class="menu__navigation-link">Contact</a></li>
+        <ul class="menu__navigation hidden">
+          <li class="menu__navigation-item"><a href="#header-link" class="menu__navigation-link">Home</a></li>
+          <li class="menu__navigation-item"><a href="#features-link" class="menu__navigation-link">Features</a></li>
+          <li class="menu__navigation-item"><a href="#about-link" class="menu__navigation-link">About</a></li>
+          <li class="menu__navigation-item"><a href="#testimonials-link" class="menu__navigation-link">Testimonials</a></li>
+          <li class="menu__navigation-item"><a href="#pricing-link" class="menu__navigation-link">Pricing</a></li>
+          <li class="menu__navigation-item"><a href="#contacts-link" class="menu__navigation-link">Contact</a></li>
+          <div class="menu__burger_close">
+            <div class="menu__burger-line menu__burger-line-2"></div>
+            <div class="menu__burger-line menu__burger-line-3"></div>
+          </div>
         </ul>
+        <div class="menu__burger">
+          <div class="menu__burger-line menu__burger-line-1"></div>
+          <div class="menu__burger-line menu__burger-line-2"></div>
+          <div class="menu__burger-line menu__burger-line-3"></div>
+          <div class="menu__burger-line menu__burger-line-4"></div>
+        </div>
       </nav>
       <div class="header__content">
         <div class="header__left">
-          <div class="header-subtitle subtitle">introducing lucid theme</div>
-          <div class="header-title">Carefully crafted and beautiful landing page.</div>
-          <div class="header-text">Etiam ullamcorper et turpis eget hendrerit. Praesent varius risus mi, at elementum magna ultricies accumsan. Cras venenatis lacus sed dolor placerat tempus. Morbi blandit at neque ut imperdiet.</div>
-          <div class="buttons">
-            <a href="#" class="button-primary header-button">Download Now</a>
+          <div class="header__subtitle subtitle">introducing lucid theme</div>
+          <div class="header__title">Carefully crafted and beautiful landing page.</div>
+          <div class="header__text">Etiam ullamcorper et turpis eget hendrerit. Praesent varius risus mi, at elementum magna ultricies accumsan. Cras venenatis lacus sed dolor placerat tempus. Morbi blandit at neque ut imperdiet.</div>
+          <div class="header__buttons">
+            <a href="#" class="button-primary header__button">Download Now</a>
             <a href="#" class="button-secondary">View Features</a>
           </div>
         </div>
@@ -53,41 +64,42 @@
             <input placeholder="EMAIL *" type="email" class="header__form-input">
             <input placeholder="SUBJECT *" type="text" class="header__form-input">
             <textarea name="message" placeholder="MESSAGE *" class="header__form-textarea"></textarea>
-            <input type="submit" class="button-primary form-button" value="Send Message">
+            <input type="submit" class="button-primary header__form-button" value="Send Message">
           </form>
         </div>
       </div>
     </div>
   </header>
-  <section class="features">
+
+  <section class="features" id="features-link">
     <div class="container">
-      <div class="features-subtitle subtitle">Product Overview</div>
-      <div class="features-title title-center">List of amazing features</div>
-      <div class="features-items">
-        <div class="features-item">
-          <div class="features-item__img"><i class="fas fa-desktop"></i></div>
-          <div class="features-item__title">Responsive</div>
-          <div class="features-item__text">Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum lacinia consectetur.</div>
+      <div class="features__subtitle subtitle">Product Overview</div>
+      <div class="features__title title-center">List of amazing features</div>
+      <div class="features__items">
+        <div class="features__item">
+          <div class="features__item-img"><i class="fas fa-desktop"></i></div>
+          <div class="features__item-title">Responsive</div>
+          <div class="features__item-text">Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum lacinia consectetur.</div>
         </div>
-        <div class="features-item">
-          <div class="features-item__img"><i class="fas fa-cog"></i></div>
-          <div class="features-item__title">Customizable</div>
-          <div class="features-item__text">Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum lacinia consectetur.</div>
+        <div class="features__item">
+          <div class="features__item-img"><i class="fas fa-cog"></i></div>
+          <div class="features__item-title">Customizable</div>
+          <div class="features__item-text">Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum lacinia consectetur.</div>
         </div>
-        <div class="features-item">
-          <div class="features-item__img"><i class="far fa-thumbs-up"></i></div>
-          <div class="features-item__title">Lovely design</div>
-          <div class="features-item__text">Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum lacinia consectetur.</div>
+        <div class="features__item">
+          <div class="features__item-img"><i class="far fa-thumbs-up"></i></div>
+          <div class="features__item-title">Lovely design</div>
+          <div class="features__item-text">Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum lacinia consectetur.</div>
         </div>
-        <div class="features-item">
-          <div class="features-item__img"><i class="fas fa-mobile-alt"></i></div>
-          <div class="features-item__title">Mobile Friendly</div>
-          <div class="features-item__text">Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum lacinia consectetur.</div>
+        <div class="features__item">
+          <div class="features__item-img"><i class="fas fa-mobile-alt"></i></div>
+          <div class="features__item-title">Mobile Friendly</div>
+          <div class="features__item-text">Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum lacinia consectetur.</div>
         </div>
       </div>
     </div>
   </section>
-  <section class="beautiful">
+  <section class="beautiful" id="about-link">
     <div class="container">
       <div class="beautiful__content">
         <div class="beautiful__left">
@@ -123,88 +135,87 @@
       </div>
     </div>
   </section>
-  <section class="comments">
+  <section class="comments" id="testimonials-link">
     <div class="container">
-      <div class="comments-subtitle subtitle">Quality has its price</div>
-      <div class="comments-title title-center">Pricing & Plans</div>
-      <div class="comments-slider">
-        <div class="comments-slider__item">
-          <div class="comments-slider__item-text">Once upon a time all the Rivers combined to protest against the action of the Sea in making their waters salt. “When we come to you,” said they to the Sea.</div>
-          <div class="comments-slider__item-author">
-            <img src="images/author-img-1.png" alt="" class="comments-slider__item-img">
-            <div class="comments-slider__item-information">
-              <div class="comments-slider__item-name">John Doe</div>
-              <div class="comments-slider__item-profession">CEO, The Rivers Company</div>
+      <div class="comments__title title-center">Testimonials</div>
+      <div class="comments__slider">
+        <div class="comments__slider-item">
+          <div class="comments__slider-item-text">Once upon a time all the Rivers combined to protest against the action of the Sea in making their waters salt. “When we come to you,” said they to the Sea.</div>
+          <div class="comments__slider-item-author">
+            <img src="images/author-img-1.png" alt="" class="comments__slider-item-img">
+            <div class="comments__slider-item-information">
+              <div class="comments__slider-item-name">John Doe</div>
+              <div class="comments__slider-item-profession">CEO, The Rivers Company</div>
             </div>
           </div>
         </div>
-        <div class="comments-slider__item">
-          <div class="comments-slider__item-text">A shoe is not only a design, but it's a part of your body language, the way you walk. The way you're going to move is quite dictated by your shoes.</div>
-          <div class="comments-slider__item-author">
-            <img src="images/author-img-2.png" alt="" class="comments-slider__item-img">
-            <div class="comments-slider__item-information">
-              <div class="comments-slider__item-name">Dean Winchester</div>
-              <div class="comments-slider__item-profession">UX DESIGNER, GOOGLE INC.</div>
+        <div class="comments__slider-item">
+          <div class="comments__slider-item-text">A shoe is not only a design, but it's a part of your body language, the way you walk. The way you're going to move is quite dictated by your shoes.</div>
+          <div class="comments__slider-item-author">
+            <img src="images/author-img-2.png" alt="" class="comments__slider-item-img">
+            <div class="comments__slider-item-information">
+              <div class="comments__slider-item-name">Dean Winchester</div>
+              <div class="comments__slider-item-profession">UX DESIGNER, GOOGLE INC.</div>
             </div>
           </div>
         </div>
-        <div class="comments-slider__item">
-          <div class="comments-slider__item-text">Once upon a time all the Rivers combined to protest against the action of the Sea in making their waters salt. “When we come to you,” said they to the Sea.</div>
-          <div class="comments-slider__item-author">
-            <img src="images/author-img-1.png" alt="" class="comments-slider__item-img">
-            <div class="comments-slider__item-information">
-              <div class="comments-slider__item-name">John Doe</div>
-              <div class="comments-slider__item-profession">CEO, The Rivers Company</div>
+        <div class="comments__slider-item">
+          <div class="comments__slider-item-text">Once upon a time all the Rivers combined to protest against the action of the Sea in making their waters salt. “When we come to you,” said they to the Sea.</div>
+          <div class="comments__slider-item-author">
+            <img src="images/author-img-1.png" alt="" class="comments__slider-item-img">
+            <div class="comments__slider-item-information">
+              <div class="comments__slider-item-name">John Doe</div>
+              <div class="comments__slider-item-profession">CEO, The Rivers Company</div>
             </div>
           </div>
         </div>
-        <div class="comments-slider__item">
-          <div class="comments-slider__item-text">A shoe is not only a design, but it's a part of your body language, the way you walk. The way you're going to move is quite dictated by your shoes.</div>
-          <div class="comments-slider__item-author">
-            <img src="images/author-img-2.png" alt="" class="comments-slider__item-img">
-            <div class="comments-slider__item-information">
-              <div class="comments-slider__item-name">Dean Winchester</div>
-              <div class="comments-slider__item-profession">UX DESIGNER, GOOGLE INC.</div>
+        <div class="comments__slider-item">
+          <div class="comments__slider-item-text">A shoe is not only a design, but it's a part of your body language, the way you walk. The way you're going to move is quite dictated by your shoes.</div>
+          <div class="comments__slider-item-author">
+            <img src="images/author-img-2.png" alt="" class="comments__slider-item-img">
+            <div class="comments__slider-item-information">
+              <div class="comments__slider-item-name">Dean Winchester</div>
+              <div class="comments__slider-item-profession">UX DESIGNER, GOOGLE INC.</div>
             </div>
           </div>
         </div>
-        <div class="comments-slider__item">
-          <div class="comments-slider__item-text">Once upon a time all the Rivers combined to protest against the action of the Sea in making their waters salt. “When we come to you,” said they to the Sea.</div>
-          <div class="comments-slider__item-author">
-            <img src="images/author-img-1.png" alt="" class="comments-slider__item-img">
-            <div class="comments-slider__item-information">
-              <div class="comments-slider__item-name">John Doe</div>
-              <div class="comments-slider__item-profession">CEO, The Rivers Company</div>
+        <div class="comments__slider-item">
+          <div class="comments__slider-item-text">Once upon a time all the Rivers combined to protest against the action of the Sea in making their waters salt. “When we come to you,” said they to the Sea.</div>
+          <div class="comments__slider-item-author">
+            <img src="images/author-img-1.png" alt="" class="comments__slider-item-img">
+            <div class="comments__slider-item-information">
+              <div class="comments__slider-item-name">John Doe</div>
+              <div class="comments__slider-item-profession">CEO, The Rivers Company</div>
             </div>
           </div>
         </div>
-        <div class="comments-slider__item">
-          <div class="comments-slider__item-text">A shoe is not only a design, but it's a part of your body language, the way you walk. The way you're going to move is quite dictated by your shoes.</div>
-          <div class="comments-slider__item-author">
-            <img src="images/author-img-2.png" alt="" class="comments-slider__item-img">
-            <div class="comments-slider__item-information">
-              <div class="comments-slider__item-name">Dean Winchester</div>
-              <div class="comments-slider__item-profession">UX DESIGNER, GOOGLE INC.</div>
+        <div class="comments__slider-item">
+          <div class="comments__slider-item-text">A shoe is not only a design, but it's a part of your body language, the way you walk. The way you're going to move is quite dictated by your shoes.</div>
+          <div class="comments__slider-item-author">
+            <img src="images/author-img-2.png" alt="" class="comments__slider-item-img">
+            <div class="comments__slider-item-information">
+              <div class="comments__slider-item-name">Dean Winchester</div>
+              <div class="comments__slider-item-profession">UX DESIGNER, GOOGLE INC.</div>
             </div>
           </div>
         </div>
-        <div class="comments-slider__item">
-          <div class="comments-slider__item-text">Once upon a time all the Rivers combined to protest against the action of the Sea in making their waters salt. “When we come to you,” said they to the Sea.</div>
-          <div class="comments-slider__item-author">
-            <img src="images/author-img-1.png" alt="" class="comments-slider__item-img">
-            <div class="comments-slider__item-information">
-              <div class="comments-slider__item-name">John Doe</div>
-              <div class="comments-slider__item-profession">CEO, The Rivers Company</div>
+        <div class="comments__slider-item">
+          <div class="comments__slider-item-text">Once upon a time all the Rivers combined to protest against the action of the Sea in making their waters salt. “When we come to you,” said they to the Sea.</div>
+          <div class="comments__slider-item-author">
+            <img src="images/author-img-1.png" alt="" class="comments__slider-item-img">
+            <div class="comments__slider-item-information">
+              <div class="comments__slider-item-name">John Doe</div>
+              <div class="comments__slider-item-profession">CEO, The Rivers Company</div>
             </div>
           </div>
         </div>
-        <div class="comments-slider__item">
-          <div class="comments-slider__item-text">A shoe is not only a design, but it's a part of your body language, the way you walk. The way you're going to move is quite dictated by your shoes.</div>
-          <div class="comments-slider__item-author">
-            <img src="images/author-img-2.png" alt="" class="comments-slider__item-img">
-            <div class="comments-slider__item-information">
-              <div class="comments-slider__item-name">Dean Winchester</div>
-              <div class="comments-slider__item-profession">UX DESIGNER, GOOGLE INC.</div>
+        <div class="comments__slider-item">
+          <div class="comments__slider-item-text">A shoe is not only a design, but it's a part of your body language, the way you walk. The way you're going to move is quite dictated by your shoes.</div>
+          <div class="comments__slider-item-author">
+            <img src="images/author-img-2.png" alt="" class="comments__slider-item-img">
+            <div class="comments__slider-item-information">
+              <div class="comments__slider-item-name">Dean Winchester</div>
+              <div class="comments__slider-item-profession">UX DESIGNER, GOOGLE INC.</div>
             </div>
           </div>
         </div>
@@ -225,7 +236,8 @@
       </div>
     </div>
   </section>
-  <section class="pricing">
+
+  <section class="pricing" id="pricing-link">
     <div class="container">
       <div class="pricing-subtitle subtitle">Quality has its price</div>
       <div class="pricing-title title-center">Pricing & Plans</div>
@@ -285,23 +297,24 @@
       </div>
     </div>
   </section>
-  <section class="contacts">
+
+  <section class="contacts" id="contacts-link">
     <div class="container">
-      <div class="contacts-subtitle subtitle">Stay in touch</div>
-      <div class="contacts-title title-center">Contact us</div>
+      <div class="contacts__subtitle subtitle">Stay in touch</div>
+      <div class="contacts__title title-center">Contact us</div>
       <div class="contacts__items">
-        <div class="contact__item">
+        <div class="contacts__item">
           <i class="fas fa-mobile-alt contacts__item-icon"></i>
           <div class="contacts__item-text">Phone: (415) 124-5678</div>
           <div class="contacts__item-text">Fax: (412) 123-8290</div>
         </div>
-        <div class="contact__item">
+        <div class="contacts__item">
           <i class="fas fa-map-marker-alt contacts__item-icon"></i>
           <div class="contacts__item-text">1001 Brickell Bay Dr.</div>
           <div class="contacts__item-text">Suite 1900</div>
           <div class="contacts__item-text">Miami, FL 33131</div>
         </div>
-        <div class="contact__item">
+        <div class="contacts__item">
           <i class="far fa-envelope contacts__item-icon"></i>
           <div class="contacts__item-text">support@yourname.com</div>
         </div>
@@ -323,11 +336,13 @@
       </form>
     </div>
   </section>
+
   <section class="map">
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2662.3533225799283!2d17.123842615614013!3d48.141993179223824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476c893ec3437c33%3A0xcec1993ded75b8e6!2sPanorama%20Towers%2C%20Bratislava!5e0!3m2!1sru!2sua!4v1584988278249!5m2!1sru!2sua"
       frameborder="0" style="border:0;" allowfullscreen="true" aria-hidden="false" tabindex="0" class="google-map"></iframe>
   </section>
+
   <footer class="footer">
     <div class="container">
       <div class="footer__body">
@@ -347,6 +362,7 @@
   <script type="text/javascript" src="js/slick.min.js"></script>
   <script src="https://kit.fontawesome.com/832176ff7d.js" crossorigin="anonymous"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script type="text/javascript" src="js/go_top.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
 
 </body>
