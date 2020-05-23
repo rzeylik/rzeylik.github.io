@@ -48,7 +48,7 @@ a {
   cursor: pointer;
 }
 
-#toTop {
+/*#toTop {
   display: none;
   position: fixed;
   bottom: 20px;
@@ -66,8 +66,8 @@ a {
 #toTop:hover {
   transition: .5s ease;
   background-color: #054e73;
-}
-  
+}*/
+
 .container {
   max-width: 1200px;
   margin: 0px auto;
