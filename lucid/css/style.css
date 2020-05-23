@@ -47,7 +47,7 @@ a {
   text-decoration: none;
   cursor: pointer;
 }
-/*
+
 #toTop {
   display: none;
   position: fixed;
@@ -67,7 +67,7 @@ a {
   transition: .5s ease;
   background-color: #054e73;
 }
-*/
+  
 .container {
   max-width: 1200px;
   margin: 0px auto;
@@ -723,7 +723,6 @@ a {
   justify-content: flex-end;
 }
 .contacts-button{
-  border: none;
   cursor: pointer;
 }
 
